@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../app/components/Navbar';
-import Footer from '../app/components/Footer';
-import FeaturedCar from '../app/components/FeaturedCar';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import FeaturedCar from '../components/FeaturedCar';
 
 interface Car {
   name: string;
