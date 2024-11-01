@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import FeaturedCar from './components/FeaturedCar';
-import Footer from './components/Footer';
+
 
 
 
@@ -31,10 +31,7 @@ const HomePage: React.FC = () => {
           {featuredCars.map((car) => (
             <FeaturedCar key={car.slug} car={car} />
           ))}
-        </div>
-      </section>
-      <Footer />
-    </div>
+     
   );
 };
 
