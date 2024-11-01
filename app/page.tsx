@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../my-app/app/components/Navbar';
-import FeaturedCar from '../my-app/app/components/FeaturedCar';
-import Footer from '../my-app/app/components/Footer';
+import Navbar from './components/Navbar';
+import FeaturedCar from './components/FeaturedCar';
+import Footer from './components/Footer';
 
 
 
