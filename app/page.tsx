@@ -1,7 +1,6 @@
 import React from 'react';
 
 
-import FeaturedCar from '../components/FeaturedCar';
 
 interface Car {
   name: string;
