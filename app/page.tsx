@@ -1,6 +1,7 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import FeaturedCar from '../components/FeaturedCar';
+import Navbar from '../my-app/components/Navbar';
+import FeaturedCar from '../my-app/components/FeaturedCar';
+import Footer from '../my-app/components/Footer';
 
 
 
