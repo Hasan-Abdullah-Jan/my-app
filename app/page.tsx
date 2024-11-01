@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
   return (
    
       <Navbar />
-      <section className="hero bg-blue-600 p-20 text-white">
+      <section>
         <h1 className="text-4xl font-bold">Welcome to the Car Selling Website</h1>
         <p className="text-lg mt-4">Your dream car is just a click away!</p>
         <p><h1>IT-Class Home-Work Simple-Car-Website</h1></p>
