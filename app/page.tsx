@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
   ];
 
   return (
-    <div className="bg-white text-black p-8 text-center">
+   
       <Navbar />
       <section className="hero bg-blue-600 p-20 text-white">
         <h1 className="text-4xl font-bold">Welcome to the Car Selling Website</h1>
