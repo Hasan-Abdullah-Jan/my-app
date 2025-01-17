@@ -1,0 +1,122 @@
+Marketplace Type Choice: Rental E-Commerce
+Primary Purpose: I’ve chosen Rental E-Commerce as the marketplace type for my business, which focuses on renting gaming consoles (PlayStation, Xbox) and accessories (controllers, VR headsets) to gatherings like family or friends get-togethers. The core aim is to make these events memorable by offering an affordable and convenient way to rent high-quality gaming experiences, without the need for long-term ownership.
+
+-------Business Goals--------
+
+Problem Solved:
+
+Problem: Many people love to play games at social gatherings but do not want to invest in expensive gaming consoles and accessories for one-time use.
+Solution: Our marketplace will allow customers to rent gaming consoles (PlayStation, Xbox) and accessories (VR headsets, extra controllers) for short-term use at competitive prices. We aim to make gaming experiences accessible, affordable, and stress-free for events like birthday parties, family reunions, and friends' hangouts.
+Target Audience:
+
+Primary Audience:
+Families, friends, and groups who are organizing social gatherings and looking for entertainment options.
+Event planners looking to provide a unique gaming experience for their clients.
+Demographic:
+People between 18-40 years of age who enjoy gaming and are likely to host social events.
+Budget-conscious consumers who prefer renting over buying.
+Products and Services Offered:
+
+Gaming Consoles: PlayStation (various models), Xbox (various models).
+Accessories: Extra controllers, VR headsets, headsets, chargers.
+Games: Selection of popular games for PlayStation and Xbox, available as add-ons.
+Rental Packages: Tailored rental packages that include base consoles, additional controllers, games, VR options, and delivery services.
+Competitive Advantage:
+
+Speed: Fast, reliable delivery and pick-up service to ensure the gaming consoles arrive in time for the event.
+Affordability: We will offer lower rates compared to competitors, ensuring that customers only pay for the short-term rental instead of purchasing expensive gaming systems.
+Customization: We will provide customizable packages (e.g., specific games, additional controllers) so users can tailor the rental to their event's needs.
+Data Schema
+Entities in Your Marketplace:
+Products:
+
+ID: Unique identifier (e.g., PS5, Xbox Series X).
+Name: Console/Accessory/Game name.
+Price: Cost for renting the product.
+Stock: Quantity available for rent.
+Category: Console, Controller, VR headset, Game.
+Tags: Keywords (e.g., “New Arrival,” “Popular,” “Exclusive”).
+
+Orders:
+
+Order ID: Unique identifier for each rental.
+Customer Info: Customer name, email, contact number.
+Product Details: List of products rented, quantities, and associated prices.
+Status: Order status (e.g., Pending, Delivered, Returned).
+Timestamp: Date and time the order was placed.
+
+Customers:
+
+Customer ID: Unique identifier for the customer.
+Name: Full name of the customer.
+Contact Info: Phone number, email address.
+Address: Delivery address for the rental.
+Order History: A log of all orders made by the customer.
+
+Delivery Zones:
+
+Zone Name: Identifier for a delivery zone.
+Coverage Area: Geographic area (postal codes, cities).
+Assigned Drivers: Details of drivers or delivery personnel.
+Delivery Dates/Times: Scheduling info for delivery.
+
+Shipment:
+
+Shipment ID: Unique identifier for the shipment.
+Order ID: The associated order being shipped.
+Status: Current status (e.g., Shipped, Delivered, Picked up).
+Delivery Date: Expected or actual date of delivery.
+Return Date: Expected or actual date for the rental to be returned.
+Relationships Between Entities:
+
+
+[Product] -----> [Order] -----> [Customer]
+   |                |                |
+   |                V                V
+   |           [Shipment]        [Delivery Zone]
+   |
+[Price] ----> [Category]
+
+
+Products are linked to Orders based on what the customer rents.
+Orders are associated with Customers to track who rented what.
+Shipments are associated with Orders to track the delivery and return of products.
+Delivery Zones and Shipment help ensure that the delivery is within the geographical service area.
+Key Fields for Each Entity:
+
+Products:
+
+ID: Unique product identifier.
+Name: The name of the product (e.g., PlayStation 5).
+Price: Price for a set rental period (e.g., 1 day, weekend).
+Stock: Number of available units.
+Category: Consoles, accessories, games.
+Tags: Descriptive keywords for product search optimization.
+
+Orders:
+
+Order ID: Unique order number.
+Customer ID: Links to the customer who placed the order.
+Product ID: Links to the rented products.
+Quantity: Number of products rented.
+Status: Tracks the state of the order (e.g., Pending, Shipped, Delivered).
+
+Customers:
+
+Customer ID: Unique ID for each customer.
+Name: Full name of the customer.
+Contact Info: Email, phone number.
+Order History: Keeps a list of all previous rentals.
+
+Delivery Zones:
+
+Zone Name: The zone's name or ID.
+Coverage Area: Postal codes or cities served by the service.
+Assigned Drivers: List of delivery personnel linked to zones.
+
+Shipment:
+
+Shipment ID: Unique ID for the shipment.
+Order ID: The order linked to the shipment.
+Status: Current shipment status.
+Delivery Date: Expected or actual delivery date.
